@@ -1,0 +1,8 @@
+---
+- name: Copy /etc/passwd file to /tmp/copy_passwd
+  hosts: localhost
+  tasks:
+    - name: Copy
+      copy:
+        src: /etc/passwd
+        dest: /tmp/copy_passwd
