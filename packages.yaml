@@ -1,6 +1,6 @@
 ---
 - name: Install Packages
-  hosts: localhost
+  hosts: all
   tasks:
     - name: Install vim curl wget
       yum:
