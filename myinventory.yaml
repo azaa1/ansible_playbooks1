@@ -1,0 +1,12 @@
+---
+all:  # all servers
+  hosts:  #ungrouped
+  children:
+    group1: #group name
+      hosts:
+        host1:
+          ansible_host: 10.108.0.4
+    group2: #group name
+      hosts:
+        host2:
+          ansible_host: 10.108.0.5
